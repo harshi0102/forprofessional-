@@ -22,6 +22,7 @@
   background-color:white;
   margin: 0;
   padding: 0;
+  
 }
     
     h2, h3 {
@@ -243,8 +244,62 @@
     font-family:'Manrope';
     font-size:15px;
     margin-top:10px;
-    
+
   }
+
+  .container {
+    width: 80%;
+    max-width:1200px;
+    
+    
+}
+
+/* Style the program box */
+.program-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left  ;
+    margin: 20px 0;
+}
+
+.program-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align:center;
+}
+
+.program-box p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+
+}
+
+.program-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.program-box ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.program-box ul li::before {
+    content: "✔️ ";
+    color: #28a745;
+}
+.who{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+}
  
   </style>
 </head>
@@ -450,8 +505,27 @@
     </div>
   </div>
 </div>
-</section>
 
+
+
+
+<section class="who">
+<div class="container">
+  <div class="program-box">
+      <h2>Who This Program Is For</h2>
+      <p>The Visionary Impact Program is tailored for accomplished healthcare professionals ready to amplify their influence, including:</p>
+      <ul>
+          <li>Healthcare CEOs and Executives: Visionaries steering organizations through complex challenges and driving industry-wide innovation.</li>
+          <li>Accomplished Private Practice Doctors: Specialists with unique methodologies and patient care approaches that could benefit the broader medical community.</li>
+          <li>Hospital Administrators: Leaders with invaluable insights into healthcare system optimization and patient experience enhancement.</li>
+          <li>Medical Researchers: Pioneers bridging the gap between groundbreaking discoveries and practical, life-saving applications.</li>
+          <li>Healthcare Entrepreneurs: Innovators reshaping the landscape of medical technology and service delivery.</li>
+          <li>Veteran Nurses and Healthcare Practitioners: Professionals with deep, hands-on experience in patient care and healthcare delivery systems.</li>
+      </ul>
+  </div>
+</div>
+</section>
+</section>
 
 </body>
 </html>
