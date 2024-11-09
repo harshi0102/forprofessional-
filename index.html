@@ -6,10 +6,76 @@
   <title>Visionary Impact Program & Healthcare Thought Leadership</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       font-family: 'Manrope', sans-serif;
     }
+
+    .feature-box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+            font-family: 'Manrope', sans-serif;
+            width:1200px;
+        }
+
+        .feature-box h2 {
+            grid-column: span 3;
+            text-align: center;
+            font-size: 2.5rem;
+            color: #007BFF;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .feature-box .feature {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            
+        }
+
+        .feature-box .icon {
+            background-color: #f0f9ff;
+            padding: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .feature-box i {
+            font-size: 2rem;
+            color: #007BFF;
+        }
+
+        .feature-box h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .feature-box p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Responsive Design: Stacking content vertically on smaller screens */
+        @media (max-width: 768px) {
+            .feature-box {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-box h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
   </style>
 </head>
 <body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4 space-y-8">
@@ -70,6 +136,53 @@
     <h2 class="text-2xl md:text-3xl font-semibold text-blue-500 text-center mt-6">The Power of Thought Leadership in Healthcare</h2>
 
   </div>
+
+
+  
+ 
+
+<section class="feature-box">
+    <h2>The Power of Thought Leadership in Healthcare</h2>
+
+    <div class="feature">
+        <div class="icon"><i class="fas fa-brain"></i></div>
+        <h3>Shape Industry Trends and Policy</h3>
+        <p>As a recognized thought leader, your insights will influence key decision-makers, shaping policies and practices that impact millions of lives.</p>
+    </div>
+
+    <div class="feature">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <h3>Inspire the Next Generation</h3>
+        <p>Your journey and wisdom will serve as a beacon for up-and-coming healthcare professionals, guiding them towards innovation and excellence.</p>
+    </div>
+
+    <div class="feature">
+        <div class="icon"><i class="fas fa-globe"></i></div>
+        <h3>Global Influence</h3>
+        <p>Extend your impact far beyond your immediate practice or organization, affecting positive change on a global scale.</p>
+    </div>
+
+    <div class="feature">
+        <div class="icon"><i class="fas fa-book"></i></div>
+        <h3>Create a Lasting Legacy</h3>
+        <p>Develop a body of work and initiatives that will continue to influence healthcare long after your active career.</p>
+    </div>
+
+    <div class="feature">
+        <div class="icon"><i class="fas fa-microphone-alt"></i></div>
+        <h3>Prestigious Opportunities</h3>
+        <p>Gain access to high-profile speaking engagements, book deals, advisory roles, and media appearances.</p>
+    </div>
+
+    <div class="feature">
+        <div class="icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Elevate Your Personal and Organizational Brand</h3>
+        <p>Enhance your reputation and that of your organization, attracting top talent, partnerships, and opportunities.</p>
+    </div>
+</section>
+
+
+
 
 </body>
 </html>
