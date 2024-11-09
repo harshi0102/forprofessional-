@@ -10,9 +10,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
+
+* {
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif; /* Set Manrope font for all text */
+}
     body {
       font-family: 'Manrope', sans-serif;
-    }
+      line-height: 1.6;
+      
+  background-color:white;
+  margin: 0;
+  padding: 0;
+}
+    
+    h2, h3 {
+            font-family: 'Manrope', sans-serif;
+            color: #007BFF;
+            font-weight: 600;
+        }
 
     .feature-box {
             display: grid;
@@ -20,7 +36,7 @@
             gap: 20px;
             padding: 40px;
             font-family: 'Manrope', sans-serif;
-            width:1200px;
+            width:1000px;
         }
 
         .feature-box h2 {
@@ -30,6 +46,8 @@
             color: #007BFF;
             font-weight: 600;
             margin-bottom: 30px;
+            line-height: 1.5; /* Adding line height */
+            letter-spacing: 1px; /* Adding letter spacing */
         }
 
         .feature-box .feature {
@@ -38,7 +56,6 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            
         }
 
         .feature-box .icon {
@@ -58,11 +75,15 @@
             font-size: 1.5rem;
             color: #333;
             margin-bottom: 10px;
+            line-height: 1.4; /* Adding line height */
+            letter-spacing: 0.5px; /* Adding letter spacing */
         }
 
         .feature-box p {
             font-size: 1rem;
             color: #666;
+            line-height: 1.6; /* Adding line height */
+            letter-spacing: 0.3px; /* Adding letter spacing */
         }
 
         /* Responsive Design: Stacking content vertically on smaller screens */
@@ -75,7 +96,156 @@
                 font-size: 2rem;
             }
         }
-    </style>
+
+
+
+
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* The vertical blue line in the center */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: blue; /* Set the color to blue */
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width:50%;
+  font-family: 'Manrope', sans-serif; /* Manrope font for each section */
+}
+
+/* The blue circle on the timeline */
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width:20px;
+  height: 20px;
+  right: -10px;
+  background-color: blue; /* Changed to blue */
+  border: 4px solid blue; /* Blue border */
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.timeline-item.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.timeline-item.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.timeline-item.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.timeline-item.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.timeline-item.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.timeline-content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timeline to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-item::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+.sectionheading, .paragraphheading {
+    text-align: center;
+    margin: 0 auto;
+    
+  }
+
+  .sectionheading{
+  font-size:19px;
+  }
+  .paragraphheading{
+    font-family:'Manrope';
+    font-size:15px;
+    margin-top:10px;
+    
+  }
+ 
   </style>
 </head>
 <body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4 space-y-8">
@@ -141,7 +311,8 @@
   
  
 
-<section class="feature-box">
+
+  <section class="feature-box">
     <h2>The Power of Thought Leadership in Healthcare</h2>
 
     <div class="feature">
@@ -182,6 +353,104 @@
 </section>
 
 
+
+
+<section class="timelinecontent"><h2 class="sectionheading">Our Comprehensive Thought Leadership Program</h2>
+  <p class="paragraphheading">The Visionary Impact Program is a multi-faceted, personalized journey designed to elevate you from an accomplished healthcare professional to a recognized industry thought leader. Here's how we'll transform your expertise into lasting influence</p>
+<div class="timeline">
+  <div class="timeline-item left">
+    <div class="timeline-content">
+      <h3>1. Strategic Personal Branding</h3>
+      <p>We begin by crafting your unique thought leadership identity. Our branding experts will work closely with you to:</p>
+      <ul>
+        <li>Identify your core expertise and unique value proposition</li>
+        <li>Develop a compelling personal narrative that resonates with your target audience</li>
+        <li>Create a visual brand identity that conveys authority and innovation</li>
+        <li>Refine your messaging to ensure consistency across all platforms</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item right">
+    <div class="timeline-content">
+      <h3>2. Content Creation and Distribution Strategy</h3>
+      <p>Our team of expert writers, marketers, and industry specialists will help you create and disseminate thought-provoking content that establishes your authority:</p>
+      <ul>
+        <li>Develop a content calendar aligned with industry trends and your expertise</li>
+        <li>Create in-depth articles, white papers, and case studies</li>
+        <li>Produce engaging video content and podcasts</li>
+        <li>Craft social media strategies to amplify your reach</li>
+        <li>Secure guest posting opportunities in prestigious healthcare publications</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item left">
+    <div class="timeline-content">
+      <h3>3. Public Speaking and Media Training</h3>
+      <p>Hone your ability to communicate complex ideas with clarity and charisma:</p>
+      <ul>
+        <li>One-on-one coaching with professional public speaking trainers</li>
+        <li>Media training for television, radio, and podcast appearances</li>
+        <li>Development of signature talks and presentations</li>
+        <li>Strategies for engaging audiences in various formats (keynotes, panels, workshops)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item right">
+    <div class="timeline-content">
+      <h3>4. Network Expansion and Strategic Partnerships</h3>
+      <p>Expand your sphere of influence through carefully curated connections:</p>
+      <ul>
+        <li>Access to our exclusive network of healthcare influencers and decision-makers</li>
+        <li>Facilitation of strategic partnerships with complementary thought leaders</li>
+        <li>Introductions to media contacts and conference organizers</li>
+        <li>Opportunities for collaborative research and co-authored publications</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item left">
+    <div class="timeline-content">
+      <h3>5. Book Development and Publishing</h3>
+      <p>Transform your knowledge into a published work that cements your thought leadership status:</p>
+      <ul>
+        <li>Concept development and book proposal creation</li>
+        <li>Ghostwriting and editing services</li>
+        <li>Guidance on self-publishing vs. traditional publishing routes</li>
+        <li>Book launch and promotion strategies</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item right">
+    <div class="timeline-content">
+      <h3>6. Digital Presence Optimization</h3>
+      <p>Ensure your online presence reflects your thought leadership status:</p>
+      <ul>
+        <li>Development of a professional, branded website</li>
+        <li>Optimization of LinkedIn and other relevant social media profiles</li>
+        <li>Creation of a Google Knowledge Panel</li>
+        <li>Implementation of SEO strategies to improve online visibility</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item left">
+    <div class="timeline-content">
+      <h3>7. Legacy Planning and Philanthropic Initiatives</h3>
+      <p>Create a lasting impact that extends beyond your career:</p>
+      <ul>
+        <li>Development of a personal or professional foundation</li>
+        <li>Creation of mentorship programs or educational initiatives</li>
+        <li>Establishment of awards or grants in your field of expertise</li>
+        <li>Strategic planning for long-term influence in healthcare</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
 
 
 </body>
