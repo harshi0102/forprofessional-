@@ -23,6 +23,7 @@
   margin: 0;
   padding: 0;
   
+  
 }
     
     h2, h3 {
@@ -300,10 +301,186 @@
   justify-content: center;
   height:100vh;
 }
- 
+
+
+
+
+
+
+
+
+ .testinomial{
+  font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
+
+ .testimonial-container {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.testimonial-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 20px 0;
+}
+
+
+.testimonial-text {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Author styling */
+.testimonial-author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+}
+
+.containervisionary{
+  width: 80%;
+    max-width: 900px;
+    padding: 20px;
+
+}
+
+.content-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Style for the heading */
+.content-box h2 {
+    font-size: 2rem;
+    color: #1e3a8a;  /* Blue color for the heading */
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+/* Style for the paragraph text */
+.content-box p {
+    font-size: 1.1rem;
+    color: #000;  /* Black color for the text */
+    margin-bottom: 15px;
+}
+
+/* Style for the list items */
+.content-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.content-box ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #000;
+    line-height: 1.6;
+}
+
+.content-box ul li::before {
+    content: "✔️ ";  /* Adds a checkmark before each list item */
+    color: #28a745;  /* Green color for checkmark */
+}
+
+.faq-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 800px;
+      margin: auto; 
+    }
+
+.faq-title {
+      color: #007bff;
+      font-size: 24px;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .faq-question {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .faq-answer {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    #contact {
+    margin-bottom: 5rem;
+    background-color: #f0f9ff;
+    padding: 2rem;
+  }
+  .feature-conntact {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  .btn-primary {
+    background-color: #2563eb;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 9999px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #1d4ed8;
+  }
+
+  .btn-secondary {
+    background-color: white;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+    padding: 16px 32px;
+    border-radius: 9999px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-secondary:hover {
+    background-color: #f9fafb;
+  }
+
+
   </style>
 </head>
-<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4 space-y-8">
+<body class="font-manrope bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4 space-y-8">
 
   <!-- Visionary Impact Program Section -->
   <div class="max-w-5xl w-full bg-white border-2 border-blue-500 p-6 rounded-lg shadow-lg md:p-8">
@@ -527,5 +704,132 @@
 </section>
 </section>
 
+
+<section class="testinomial">
+
+
+  <div class="testimonial-container">
+    <div class="testimonial-box">
+        <p class="testimonial-text">
+            "The Visionary Impact Program didn't just elevate my career; it transformed my entire perspective on what's possible in healthcare. As a CEO, I've always been focused on organizational success. This program opened my eyes to the broader impact I could have on global health policy and innovation. Now, I'm not just leading a company; I'm helping shape the future of patient care on an international scale. The connections I've made and the platforms I've accessed through this program have been invaluable. It's not an exaggeration to say that this has been the most pivotal decision of my professional life."
+        </p>
+        <p class="testimonial-author">- Dr. Emily Chen, CEO of InnovaCare Health Systems</p>
+    </div>
+</div>
+</section>
+
+
+<div class="container px-4 md:px-8 lg:px-16">
+  <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">The Journey to Thought Leadership: What to Expect</h2>
+      <p class="text-lg text-gray-600">Becoming a recognized thought leader is a transformative journey that requires strategy, dedication, and expert guidance. Here's what you can expect when you embark on this path with us:</p>
+  </div>
+
+  <!-- Boxed Steps -->
+  <div class="space-y-8">
+      <div class="bg-white shadow-lg rounded-lg p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">1. Initial Assessment and Strategy Session</h3>
+          <p class="text-lg text-gray-600">We begin with a comprehensive evaluation of your current positioning, expertise, and goals. Our team will work closely with you to craft a personalized roadmap for your thought leadership journey.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">2. Brand Development and Messaging Refinement</h3>
+          <p class="text-lg text-gray-600">Over the course of several intensive sessions, we'll hone your personal brand and core messaging to ensure it resonates with your target audience and reflects your unique value proposition.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">3. Content Creation and Distribution</h3>
+          <p class="text-lg text-gray-600">Our team will work with you to develop a steady stream of high-quality, thought-provoking content. We'll also implement strategies to ensure this content reaches and engages your ideal audience.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">4. Skills Enhancement and Training</h3>
+          <p class="text-lg text-gray-600">Through one-on-one coaching sessions, you'll enhance your public speaking, media interaction, and leadership skills, preparing you for high-profile opportunities.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">5. Network Expansion and Opportunity Creation</h3>
+          <p class="text-lg text-gray-600">We'll facilitate introductions and create opportunities for you to connect with other influencers, decision-makers, and media figures in the healthcare space.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">6. Ongoing Support and Optimization</h3>
+          <p class="text-lg text-gray-600">Our team provides continuous support, analyzing the impact of your thought leadership activities and adjusting strategies as needed to maximize your influence and reach.</p>
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="containervisionary">
+    <div class="content-box">
+        <h2>Investment in Your Legacy</h2>
+        <p>The Visionary Impact Program is a significant investment in your professional legacy and the future of healthcare. While the exact cost varies based on the customized nature of each thought leadership journey, participants can expect:</p>
+
+        <ul>
+            <li>A 12-month intensive program with the option to extend</li>
+            <li>Personalized one-on-one coaching and strategy sessions</li>
+            <li>Access to our network of industry influencers and media contacts</li>
+            <li>Customized content creation and distribution services</li>
+            <li>Comprehensive personal branding and digital presence optimization</li>
+        </ul>
+
+        <p>Investment ranges typically fall between $25,000 - $150,000 for the full program, reflecting the customizable, high-touch, transformative nature of the experience.</p>
+
+        <p>Remember, this is not just an investment in your personal brand, but in your potential to shape the future of healthcare and leave a lasting legacy.</p>
+    </div>
+</div>
+  
+
+<div class="faq-container">
+  <div class="faq-title">Frequently Asked Questions</div>
+
+  <div class="faq-item">
+    <div class="faq-question">How long does it take to see results?</div>
+    <div class="faq-answer">
+      While the journey to thought leadership is ongoing, many of our clients begin to see significant traction within 3-6 months, with major opportunities often presenting themselves within the first year.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">How much time will I need to commit to this program?</div>
+    <div class="faq-answer">
+      To get the most out of the program, we recommend setting aside 5-10 hours per week for content creation, coaching sessions, and related activities. However, we understand the demanding nature of healthcare leadership and will work with you to create a schedule that fits your lifestyle.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">What if I'm not comfortable with public speaking or social media?</div>
+    <div class="faq-answer">
+      Many of our most successful clients started out with these concerns. Our program is designed to build your skills and confidence gradually. We'll work at your pace and focus on the platforms and methods that feel most authentic to you.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">How is this different from hiring a PR firm?</div>
+    <div class="faq-answer">
+      While PR is a component of thought leadership, our program goes much deeper. We focus on developing your unique insights, creating substantial content, building lasting industry relationships, and creating a long-term legacy. Our goal is not just to get you press, but to position you as a true leader and innovator in healthcare.
+    </div>
+  </div>
+</div>
+
+
+<section id="contact" class="feature-contact">
+  <h2>Ready to Begin Your Thought Leadership Journey?</h2>
+  <p>The healthcare industry is at a crucial juncture, facing unprecedented challenges and opportunities. Your voice, your experience, and your vision are needed now more than ever.</p>
+  <p>Don't let your years of hard-won insights remain untapped. It's time to amplify your impact, shape the discourse, and leave a lasting legacy in healthcare.</p>
+  <p>Contact us today for a personalized consultation. We'll discuss your goals, assess your current positioning, and outline a tailored strategy to establish you as a prominent thought leader in healthcare.</p>
+  
+  <div class="flex-container">
+<button class="btn-primary">Request a Meeting</button>
+<button class="klaviyo_form_trigger3 btn-secondary">Join Our Newsletter</button>
+</div>
+</section>
+
+</main>
+<script type="text/javascript">
+document.querySelector('.klaviyo_form_trigger3').addEventListener('click', function () {
+window._klOnsite = window._klOnsite || []; 
+window._klOnsite.push(['openForm', 'Y8GzAv']); // Replace FORM_ID with your actual form ID
+});
+
+
+</div>
 </body>
 </html>
