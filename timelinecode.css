@@ -1,0 +1,29 @@
+/* Applying Manrope font to all elements inside .timeline-item-content */
+.elementor-98021 .elementor-element.elementor-element-046a3ab .timeline-style-2 .timeline-item-wrap .timeline-inner-block .timeline-item .timeline-item-content {
+    font-family: 'Manrope', sans-serif; /* Ensuring fallback to sans-serif if Manrope is unavailable */
+    color: #D1D5DB; /* Tailwind's light gray color (gray-300) */
+}
+
+/* Enhanced design: adding padding, subtle shadow, rounded corners, and transitions */
+.elementor-98021 .elementor-element.elementor-element-046a3ab .timeline-style-2 .timeline-item-wrap .timeline-inner-block .timeline-item .timeline-item-content {
+    padding: 1.25rem 1.75rem; /* Slightly increased padding for more breathing space */
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 0.75rem; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer and larger shadow for elegance */
+    margin-bottom: 1.5rem; /* Increased bottom margin for better separation between items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for interactivity */
+}
+
+/* Hover effect to enhance user interaction */
+.elementor-98021 .elementor-element.elementor-element-046a3ab .timeline-style-2 .timeline-item-wrap .timeline-inner-block .timeline-item .timeline-item-content:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover for emphasis */
+}
+
+/* Optional: Adding a light border on hover to highlight the element */
+.elementor-98021 .elementor-element.elementor-element-046a3ab .timeline-style-2 .timeline-item-wrap .timeline-inner-block .timeline-item .timeline-item-content:hover {
+    border: 1px solid #e5e7eb; /* Light gray border on hover */
+}
+
+
+
